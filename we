@@ -1,1 +1,35 @@
-hellow 
+public class ShuiXianHua {
+
+    public static void main(String[] args)
+
+    {
+
+        System.out.println("判断水仙花数");
+
+        int i, j,k = 0;
+
+      
+
+       Scanner reader = new Scanner(System.in);
+
+        System.out.println("只算3位数的代码\n");
+
+        int m;
+
+      m = reader.nextInt();
+
+            k = m / 100;
+
+            j = (m / 10) % 10;
+
+            i = m % (k*10+j);
+
+            if (Math.pow(k,3)+Math.pow(j,3)+Math.pow(i,3)== m)
+
+            System.out.println(+m+"是水仙花数");
+
+            else System.out.println(+m+"不是水仙花数");
+
+    }
+
+}
